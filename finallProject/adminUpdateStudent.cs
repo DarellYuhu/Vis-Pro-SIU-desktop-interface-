@@ -40,7 +40,7 @@ namespace finallProject
                 tbPlaceBirth.Text = varPlaceBirth;
                 dtpDateBirth.Value = Convert.ToDateTime(varDateBirth);
                 cbGender.Text = varGender;
-                tbReligion.Text = varReligion;
+                cbReligion.Text = varReligion;
                 cbAcademicStat.Text = varAcademicStatus;
                 cbResidence.Text = varResidence;
             }
@@ -151,7 +151,7 @@ namespace finallProject
             varPlaceBirth = tbPlaceBirth.Text;
             varDateBirth = dtpDateBirth.Text;
             varGender = cbGender.Text;
-            varReligion = tbReligion.Text;
+            varReligion = cbReligion.Text;
             varAcademicStatus = cbAcademicStat.Text;
             varResidence = cbResidence.Text;
 

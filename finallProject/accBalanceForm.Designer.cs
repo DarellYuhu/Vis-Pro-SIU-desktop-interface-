@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(accBalanceForm));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.financeID = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,7 +46,6 @@
             this.bunifuGradientPanel2 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.label10 = new System.Windows.Forms.Label();
             this.btnGetCr = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuPanel1.SuspendLayout();
             this.bunifuPanel2.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
@@ -273,11 +272,11 @@
             this.btnGetCr.ColorContrastOnClick = 45;
             this.btnGetCr.ColorContrastOnHover = 45;
             this.btnGetCr.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnGetCr.CustomizableEdges = borderEdges2;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnGetCr.CustomizableEdges = borderEdges1;
             this.btnGetCr.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnGetCr.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnGetCr.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -344,33 +343,12 @@
             this.btnGetCr.UseDefaultRadiusAndThickness = true;
             this.btnGetCr.Click += new System.EventHandler(this.btnGetCr_Click);
             // 
-            // bunifuTileButton1
-            // 
-            this.bunifuTileButton1.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuTileButton1.color = System.Drawing.Color.SeaGreen;
-            this.bunifuTileButton1.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.bunifuTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton1.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.bunifuTileButton1.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton1.Image")));
-            this.bunifuTileButton1.ImagePosition = 14;
-            this.bunifuTileButton1.ImageZoom = 50;
-            this.bunifuTileButton1.LabelPosition = 27;
-            this.bunifuTileButton1.LabelText = "Pay Tuition";
-            this.bunifuTileButton1.Location = new System.Drawing.Point(53, 501);
-            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuTileButton1.Name = "bunifuTileButton1";
-            this.bunifuTileButton1.Size = new System.Drawing.Size(108, 32);
-            this.bunifuTileButton1.TabIndex = 2;
-            this.bunifuTileButton1.Click += new System.EventHandler(this.bunifuTileButton1_Click);
-            // 
             // accBalanceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.ClientSize = new System.Drawing.Size(636, 580);
-            this.Controls.Add(this.bunifuTileButton1);
             this.Controls.Add(this.btnGetCr);
             this.Controls.Add(this.bunifuPanel3);
             this.Controls.Add(this.bunifuPanel2);
@@ -409,6 +387,5 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dgvTransacHist;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnGetCr;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton1;
     }
 }

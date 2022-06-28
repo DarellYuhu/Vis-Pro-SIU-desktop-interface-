@@ -7,26 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
 using MySql.Data.MySqlClient;
 
 namespace finallProject
 {
     public partial class payTuitionForm : Form
     {
-        // create rounded design
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-
-        private static extern IntPtr CreateRoundRectRgn
-        (
-            int nLeftRect,
-            int nTopRect,
-            int nRightRect,
-            int nBottomRect,
-            int nWidthEllipse,
-            int nHeightEllipse
-        );
-
         // variable for initialize connection with database
         private MySqlConnection conn;
         private string server, database, uid, password;
@@ -41,8 +27,6 @@ namespace finallProject
         public payTuitionForm()
         {
             InitializeComponent();
-            //make the form rounded
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
 
             // create variable for connection to server
             server = "localhost";
@@ -58,6 +42,7 @@ namespace finallProject
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
             varFinanceID = tbFinanceId.Text;
+            varStudentID = tbStudentID.Text;
             varPassword = tbPassword.Text;
             if(dataChecking(varStudentID, varFinanceID, varPassword))
             {
@@ -71,7 +56,57 @@ namespace finallProject
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            tbPaymentNominal.Clear();
+            tbFinanceId.Clear();
+            tbPassword.Clear();
+            tbStudentID.Clear();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            dgvTransacHist.DataSource = getTransactionHist(varFinanceID);
+            dataFetch(varStudentID);
+        }
+
+        // fetch all the data needed
+        public void dataFetch(string studentID)
+        {
+            string query = $"SELECT mahasiswa.familyName, mahasiswa.name, accountbalance.lastBalance, accountbalance.financialID " +
+                $"FROM accountbalance INNER JOIN mahasiswa ON accountbalance.financialID = mahasiswa.financialID WHERE " +
+                $"mahasiswa.studentID = '{studentID}';";
+            try
+            {
+                if (openConnection())
+                {
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    MySqlDataReader reader = cmd.ExecuteReader();
+
+                    if (reader.Read())
+                    {
+                        //fetch * from the database
+                        lastBalance.Text = reader.GetString("lastBalance");
+
+                        reader.Close();
+                        conn.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("failed fetch data");
+                        reader.Close();
+                        conn.Close();
+                    }
+                }
+                else
+                {
+                    conn.Close();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Conncection to server failed. err code: " + ex);
+                conn.Close();
+            }
         }
 
         // checking the connection if its up and running
@@ -141,12 +176,11 @@ namespace finallProject
             }
         }
 
-        // Insert payment tuition
+        // Checking the data
         public bool dataChecking(string studentID, string financeId, string password)
         {
             //fetch data from the form and pass it to database
             string query = $"SELECT login.studentID, login.password, accountbalance.financialID FROM login INNER JOIN accountbalance ON login.studentID = accountbalance.studentID WHERE login.studentID = '{studentID}';";
-
             try
             {
                 if (openConnection())
@@ -188,6 +222,38 @@ namespace finallProject
                 MessageBox.Show(ex.Message);
                 conn.Close();
                 return false;
+            }
+        }
+
+        // fetch all the data needed in datagridview table
+        public DataTable getTransactionHist(string financeID)
+        {
+            DataTable dtTransacHIst = new DataTable();
+            string query = $"SELECT date AS \"Date\", information AS \"Information\", debit AS \"Debit\", credit AS \"Credit\" FROM transactionhistory WHERE financeID = '{financeID}';";
+            try
+            {
+                if (openConnection())
+                {
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    MySqlDataReader reader = cmd.ExecuteReader();
+
+                    dtTransacHIst.Load(reader);
+                    reader.Close();
+                    conn.Close();
+                    return dtTransacHIst;
+                }
+                else
+                {
+                    conn.Close();
+                    return dtTransacHIst;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("error code " + ex);
+                conn.Close();
+                return dtTransacHIst;
             }
         }
     }

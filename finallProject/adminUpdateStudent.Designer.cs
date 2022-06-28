@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminUpdateStudent));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.label1 = new System.Windows.Forms.Label();
             this.btnGetInfo = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,12 +46,12 @@
             this.tbGivenName = new System.Windows.Forms.TextBox();
             this.tbAddress = new System.Windows.Forms.TextBox();
             this.tbPlaceBirth = new System.Windows.Forms.TextBox();
-            this.tbReligion = new System.Windows.Forms.TextBox();
             this.cbGender = new System.Windows.Forms.ComboBox();
             this.cbAcademicStat = new System.Windows.Forms.ComboBox();
             this.cbResidence = new System.Windows.Forms.ComboBox();
             this.dtpDateBirth = new System.Windows.Forms.DateTimePicker();
             this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.cbReligion = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -84,11 +84,11 @@
             this.btnGetInfo.ColorContrastOnClick = 45;
             this.btnGetInfo.ColorContrastOnHover = 45;
             this.btnGetInfo.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnGetInfo.CustomizableEdges = borderEdges1;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnGetInfo.CustomizableEdges = borderEdges3;
             this.btnGetInfo.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnGetInfo.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnGetInfo.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -289,13 +289,6 @@
             this.tbPlaceBirth.Size = new System.Drawing.Size(220, 20);
             this.tbPlaceBirth.TabIndex = 4;
             // 
-            // tbReligion
-            // 
-            this.tbReligion.Location = new System.Drawing.Point(300, 322);
-            this.tbReligion.Name = "tbReligion";
-            this.tbReligion.Size = new System.Drawing.Size(220, 20);
-            this.tbReligion.TabIndex = 4;
-            // 
             // cbGender
             // 
             this.cbGender.FormattingEnabled = true;
@@ -371,6 +364,21 @@
             this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
+            // cbReligion
+            // 
+            this.cbReligion.FormattingEnabled = true;
+            this.cbReligion.Items.AddRange(new object[] {
+            "Islam",
+            "Kristen Protestan",
+            "Kristen Katolik",
+            "Hindu",
+            "Buddha",
+            "Konghucu"});
+            this.cbReligion.Location = new System.Drawing.Point(300, 320);
+            this.cbReligion.Name = "cbReligion";
+            this.cbReligion.Size = new System.Drawing.Size(220, 21);
+            this.cbReligion.TabIndex = 5;
+            // 
             // adminUpdateStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -381,8 +389,8 @@
             this.Controls.Add(this.dtpDateBirth);
             this.Controls.Add(this.cbResidence);
             this.Controls.Add(this.cbAcademicStat);
+            this.Controls.Add(this.cbReligion);
             this.Controls.Add(this.cbGender);
-            this.Controls.Add(this.tbReligion);
             this.Controls.Add(this.tbPlaceBirth);
             this.Controls.Add(this.tbAddress);
             this.Controls.Add(this.tbGivenName);
@@ -426,11 +434,11 @@
         private System.Windows.Forms.TextBox tbGivenName;
         private System.Windows.Forms.TextBox tbAddress;
         private System.Windows.Forms.TextBox tbPlaceBirth;
-        private System.Windows.Forms.TextBox tbReligion;
         private System.Windows.Forms.ComboBox cbGender;
         private System.Windows.Forms.ComboBox cbAcademicStat;
         private System.Windows.Forms.ComboBox cbResidence;
         private System.Windows.Forms.DateTimePicker dtpDateBirth;
         private Bunifu.Framework.UI.BunifuThinButton2 btnUpdate;
+        private System.Windows.Forms.ComboBox cbReligion;
     }
 }

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(changePassForm));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.btnCancel = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnReset = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.tbRePass = new System.Windows.Forms.TextBox();
@@ -60,11 +60,11 @@
             this.btnCancel.ColorContrastOnClick = 45;
             this.btnCancel.ColorContrastOnHover = 45;
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnCancel.CustomizableEdges = borderEdges3;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnCancel.CustomizableEdges = borderEdges1;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnCancel.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCancel.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -150,11 +150,11 @@
             this.btnReset.ColorContrastOnClick = 45;
             this.btnReset.ColorContrastOnHover = 45;
             this.btnReset.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnReset.CustomizableEdges = borderEdges4;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnReset.CustomizableEdges = borderEdges2;
             this.btnReset.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnReset.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnReset.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -233,6 +233,7 @@
             // 
             this.tbNewPass.Location = new System.Drawing.Point(159, 172);
             this.tbNewPass.Name = "tbNewPass";
+            this.tbNewPass.PasswordChar = '*';
             this.tbNewPass.Size = new System.Drawing.Size(124, 20);
             this.tbNewPass.TabIndex = 10;
             // 
@@ -251,6 +252,7 @@
             // 
             this.tbCurrentPass.Location = new System.Drawing.Point(159, 146);
             this.tbCurrentPass.Name = "tbCurrentPass";
+            this.tbCurrentPass.PasswordChar = '*';
             this.tbCurrentPass.Size = new System.Drawing.Size(124, 20);
             this.tbCurrentPass.TabIndex = 9;
             // 

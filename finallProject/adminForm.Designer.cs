@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminForm));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.navPanel = new System.Windows.Forms.Panel();
             this.btnLogout = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnExit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -43,6 +43,7 @@
             this.lblName = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.contentPanel = new System.Windows.Forms.Panel();
+            this.btnPayTuition = new System.Windows.Forms.Button();
             this.navPanel.SuspendLayout();
             this.pnlUserProfile.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -56,6 +57,7 @@
             this.navPanel.Controls.Add(this.btnLogout);
             this.navPanel.Controls.Add(this.btnExit);
             this.navPanel.Controls.Add(this.pnlNav);
+            this.navPanel.Controls.Add(this.btnPayTuition);
             this.navPanel.Controls.Add(this.btnUpdate);
             this.navPanel.Controls.Add(this.btnStudentProfile);
             this.navPanel.Controls.Add(this.pnlUserProfile);
@@ -84,11 +86,11 @@
             this.btnLogout.ColorContrastOnClick = 45;
             this.btnLogout.ColorContrastOnHover = 45;
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnLogout.CustomizableEdges = borderEdges1;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.btnLogout.CustomizableEdges = borderEdges7;
             this.btnLogout.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnLogout.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnLogout.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -175,11 +177,11 @@
             this.btnExit.ColorContrastOnClick = 45;
             this.btnExit.ColorContrastOnHover = 45;
             this.btnExit.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnExit.CustomizableEdges = borderEdges2;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.btnExit.CustomizableEdges = borderEdges8;
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnExit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnExit.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -345,7 +347,7 @@
             this.lblName.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblName.Size = new System.Drawing.Size(143, 23);
             this.lblName.TabIndex = 1;
-            this.lblName.Text = "Nama, User";
+            this.lblName.Text = "Superuser";
             this.lblName.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -373,6 +375,26 @@
             this.contentPanel.Name = "contentPanel";
             this.contentPanel.Size = new System.Drawing.Size(636, 580);
             this.contentPanel.TabIndex = 2;
+            // 
+            // btnPayTuition
+            // 
+            this.btnPayTuition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(88)))));
+            this.btnPayTuition.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPayTuition.FlatAppearance.BorderSize = 0;
+            this.btnPayTuition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPayTuition.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPayTuition.ForeColor = System.Drawing.Color.White;
+            this.btnPayTuition.Image = global::finallProject.Properties.Resources.Vector;
+            this.btnPayTuition.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPayTuition.Location = new System.Drawing.Point(0, 307);
+            this.btnPayTuition.Name = "btnPayTuition";
+            this.btnPayTuition.Size = new System.Drawing.Size(226, 70);
+            this.btnPayTuition.TabIndex = 3;
+            this.btnPayTuition.Text = "    Update Student         Tuition";
+            this.btnPayTuition.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPayTuition.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPayTuition.UseVisualStyleBackColor = false;
+            this.btnPayTuition.Click += new System.EventHandler(this.btnPayTuition_Click);
             // 
             // adminForm
             // 
@@ -409,5 +431,6 @@
         private System.Windows.Forms.Panel contentPanel;
         private Bunifu.UI.WinForms.BunifuLabel lblLoginType;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btnPayTuition;
     }
 }

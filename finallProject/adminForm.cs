@@ -63,6 +63,7 @@ namespace finallProject
 
             //Button effect
             btnUpdate.BackColor = Color.FromArgb(36, 42, 88);
+            btnPayTuition.BackColor = Color.FromArgb(36, 42, 88);
             pnlNav.Height = btnStudentProfile.Height;
             pnlNav.Top = btnStudentProfile.Top;
             pnlNav.Left = btnStudentProfile.Left;
@@ -81,6 +82,7 @@ namespace finallProject
 
             //Button effect
             btnStudentProfile.BackColor = Color.FromArgb(36, 42, 88);
+            btnPayTuition.BackColor = Color.FromArgb(36, 42, 88);
             pnlNav.Height = btnUpdate.Height;
             pnlNav.Top = btnUpdate.Top;
             pnlNav.Left = btnUpdate.Left;
@@ -96,6 +98,24 @@ namespace finallProject
             frm.TopLevel = false;
             contentPanel.Controls.Add(frm);
             frm.Show();
+        }
+
+        private void btnPayTuition_Click(object sender, EventArgs e)
+        {
+            //display form
+            contentPanel.Controls.Clear();
+            payTuitionForm frm = new payTuitionForm();
+            frm.TopLevel = false;
+            contentPanel.Controls.Add(frm);
+            frm.Show();
+
+            //Button effect
+            btnStudentProfile.BackColor = Color.FromArgb(36, 42, 88);
+            btnUpdate.BackColor = Color.FromArgb(36, 42, 88);
+            pnlNav.Height = btnPayTuition.Height;
+            pnlNav.Top = btnPayTuition.Top;
+            pnlNav.Left = btnPayTuition.Left;
+            btnPayTuition.BackColor = Color.FromArgb(75, 75, 75);
         }
     }
 }
