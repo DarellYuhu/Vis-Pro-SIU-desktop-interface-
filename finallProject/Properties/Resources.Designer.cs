@@ -63,9 +63,79 @@ namespace finallProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap award {
+            get {
+                object obj = ResourceManager.GetObject("award", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fa_solid_money_check_alt {
+            get {
+                object obj = ResourceManager.GetObject("fa-solid_money-check-alt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fa_solid_user_edit {
+            get {
+                object obj = ResourceManager.GetObject("fa-solid_user-edit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gg_profile2 {
+            get {
+                object obj = ResourceManager.GetObject("gg_profile2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap home2 {
+            get {
+                object obj = ResourceManager.GetObject("home2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap material_symbols_auto_schedule_sharp {
+            get {
+                object obj = ResourceManager.GetObject("material-symbols_auto-schedule-sharp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap online_education_school_internet_university_training_courses_background_vector {
             get {
                 object obj = ResourceManager.GetObject("online-education-school-internet-university-training-courses-background-vector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap userLogin {
+            get {
+                object obj = ResourceManager.GetObject("userLogin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

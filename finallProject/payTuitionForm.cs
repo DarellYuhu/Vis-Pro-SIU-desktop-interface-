@@ -64,8 +64,8 @@ namespace finallProject
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            dgvTransacHist.DataSource = getTransactionHist(varFinanceID);
-            dataFetch(varStudentID);
+            dgvTransacHist.DataSource = getTransactionHist(tbFinanceId.Text);
+            dataFetch(tbStudentID.Text);
         }
 
         // fetch all the data needed

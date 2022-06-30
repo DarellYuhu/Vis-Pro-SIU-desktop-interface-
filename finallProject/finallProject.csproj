@@ -246,5 +246,26 @@
   <ItemGroup>
     <None Include="Resources\online-education-school-internet-university-training-courses-background-vector.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gg_profile2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\material-symbols_auto-schedule-sharp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fa-solid_money-check-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\award.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fa-solid_user-edit.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

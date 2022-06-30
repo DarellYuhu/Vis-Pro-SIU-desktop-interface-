@@ -74,7 +74,7 @@
             this.profilePict.Location = new System.Drawing.Point(93, 83);
             this.profilePict.Name = "profilePict";
             this.profilePict.Size = new System.Drawing.Size(158, 158);
-            this.profilePict.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.profilePict.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.profilePict.TabIndex = 10;
             this.profilePict.TabStop = false;
             this.profilePict.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;

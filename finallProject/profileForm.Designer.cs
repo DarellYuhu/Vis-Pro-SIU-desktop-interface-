@@ -65,13 +65,13 @@
             this.profilePict.AllowFocused = false;
             this.profilePict.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.profilePict.AutoSizeHeight = true;
-            this.profilePict.BorderRadius = 15;
+            this.profilePict.BorderRadius = 0;
             this.profilePict.Image = ((System.Drawing.Image)(resources.GetObject("profilePict.Image")));
             this.profilePict.IsCircle = false;
             this.profilePict.Location = new System.Drawing.Point(90, 83);
             this.profilePict.Name = "profilePict";
             this.profilePict.Size = new System.Drawing.Size(158, 158);
-            this.profilePict.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.profilePict.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.profilePict.TabIndex = 5;
             this.profilePict.TabStop = false;
             this.profilePict.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;

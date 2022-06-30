@@ -44,11 +44,15 @@ namespace finallProject
                     frm.studentID = studentID; // send studentID to other form
                     frm.loginForm = this;
                     frm.Show();
+                    tbPassword.Clear();
+                    tbUsername.Clear();
                     this.Hide();
                 }
 
                 else if (userType == "admin")
                 {
+                    tbPassword.Clear();
+                    tbUsername.Clear();
                     adminForm frm = new adminForm();
                     frm.loginForm = this;
                     frm.Show();
@@ -57,6 +61,8 @@ namespace finallProject
             }
             else
             {
+                tbPassword.Clear();
+                tbUsername.Clear();
                 MessageBox.Show($"{user} does not exist or password is incorrect");
             }
         }

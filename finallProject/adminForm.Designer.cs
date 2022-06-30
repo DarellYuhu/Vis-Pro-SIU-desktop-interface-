@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminForm));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.navPanel = new System.Windows.Forms.Panel();
             this.btnLogout = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnExit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pnlNav = new System.Windows.Forms.Panel();
+            this.btnPayTuition = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnStudentProfile = new System.Windows.Forms.Button();
             this.pnlUserProfile = new System.Windows.Forms.Panel();
@@ -43,7 +44,6 @@
             this.lblName = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.contentPanel = new System.Windows.Forms.Panel();
-            this.btnPayTuition = new System.Windows.Forms.Button();
             this.navPanel.SuspendLayout();
             this.pnlUserProfile.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -86,11 +86,11 @@
             this.btnLogout.ColorContrastOnClick = 45;
             this.btnLogout.ColorContrastOnHover = 45;
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.btnLogout.CustomizableEdges = borderEdges7;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnLogout.CustomizableEdges = borderEdges1;
             this.btnLogout.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnLogout.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnLogout.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -177,11 +177,11 @@
             this.btnExit.ColorContrastOnClick = 45;
             this.btnExit.ColorContrastOnHover = 45;
             this.btnExit.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.btnExit.CustomizableEdges = borderEdges8;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnExit.CustomizableEdges = borderEdges2;
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnExit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnExit.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -257,6 +257,26 @@
             this.pnlNav.Size = new System.Drawing.Size(3, 100);
             this.pnlNav.TabIndex = 6;
             // 
+            // btnPayTuition
+            // 
+            this.btnPayTuition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(88)))));
+            this.btnPayTuition.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPayTuition.FlatAppearance.BorderSize = 0;
+            this.btnPayTuition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPayTuition.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPayTuition.ForeColor = System.Drawing.Color.White;
+            this.btnPayTuition.Image = global::finallProject.Properties.Resources.Vector;
+            this.btnPayTuition.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPayTuition.Location = new System.Drawing.Point(0, 307);
+            this.btnPayTuition.Name = "btnPayTuition";
+            this.btnPayTuition.Size = new System.Drawing.Size(226, 70);
+            this.btnPayTuition.TabIndex = 3;
+            this.btnPayTuition.Text = "    Update Student         Tuition";
+            this.btnPayTuition.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPayTuition.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPayTuition.UseVisualStyleBackColor = false;
+            this.btnPayTuition.Click += new System.EventHandler(this.btnPayTuition_Click);
+            // 
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(88)))));
@@ -265,7 +285,7 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
+            this.btnUpdate.Image = global::finallProject.Properties.Resources.fa_solid_user_edit;
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUpdate.Location = new System.Drawing.Point(0, 237);
             this.btnUpdate.Name = "btnUpdate";
@@ -285,7 +305,7 @@
             this.btnStudentProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStudentProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStudentProfile.ForeColor = System.Drawing.Color.White;
-            this.btnStudentProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnStudentProfile.Image")));
+            this.btnStudentProfile.Image = global::finallProject.Properties.Resources.gg_profile2;
             this.btnStudentProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStudentProfile.Location = new System.Drawing.Point(0, 167);
             this.btnStudentProfile.Name = "btnStudentProfile";
@@ -375,26 +395,6 @@
             this.contentPanel.Name = "contentPanel";
             this.contentPanel.Size = new System.Drawing.Size(636, 580);
             this.contentPanel.TabIndex = 2;
-            // 
-            // btnPayTuition
-            // 
-            this.btnPayTuition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(88)))));
-            this.btnPayTuition.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPayTuition.FlatAppearance.BorderSize = 0;
-            this.btnPayTuition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPayTuition.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPayTuition.ForeColor = System.Drawing.Color.White;
-            this.btnPayTuition.Image = global::finallProject.Properties.Resources.Vector;
-            this.btnPayTuition.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPayTuition.Location = new System.Drawing.Point(0, 307);
-            this.btnPayTuition.Name = "btnPayTuition";
-            this.btnPayTuition.Size = new System.Drawing.Size(226, 70);
-            this.btnPayTuition.TabIndex = 3;
-            this.btnPayTuition.Text = "    Update Student         Tuition";
-            this.btnPayTuition.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPayTuition.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPayTuition.UseVisualStyleBackColor = false;
-            this.btnPayTuition.Click += new System.EventHandler(this.btnPayTuition_Click);
             // 
             // adminForm
             // 
